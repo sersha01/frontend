@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Row, Col, Form, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom'
@@ -6,7 +6,11 @@ import AuthContext from '../../context/AuthContext'
 
 const AdminCreate = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, isAdmin } = useContext(AuthContext);
+
+    useEffect(() => {
+        isAdmin()
+    },[])
 
   return (
     <div>

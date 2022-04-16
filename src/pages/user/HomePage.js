@@ -21,7 +21,7 @@ const HomePage = () => {
         return (
       <Col xs='12' md='6' lg='3' className="card w-25x flex-grow-1 flex-sm-grow-0 m-sm-auto d-flex justify-content-center" key={index}>
         <div className="card-body mx-sm-3 flex-grow-0 d-flex justify-content-center">
-          <img src={item} />
+          <img src={item} alt='tony'/>
         </div>
         <div className='card-title mx-sm-3 text-center'>
           <h3>{user.name}</h3>

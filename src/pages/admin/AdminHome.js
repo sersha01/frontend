@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col, Button, Nav, Tab } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import AuthContext from '../../context/AuthContext';
 import AdminHeader from '../admin/AdminHeader';
 

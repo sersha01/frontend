@@ -16,7 +16,8 @@ function AdminLogin() {
                     <div className="mb-3"><label className="form-label">Username</label>
                     <input type="text" className="form-control form-control-lg" name="username" placeholder="Enter Username" /></div>
                     <div className="mb-4"><label className="form-label">Password</label>
-                    <input type="password" className="form-control form-control-lg" name="password" placeholder="Enter Password" /></div>
+                    <input type="password" className="form-control form-control-lg" name="password" placeholder="Enter Password" />
+                    <label className="text-danger">{errorLogin}</label></div>
                     <div className="py-2"><button type="submit" className="btn btn-primary btn-lg w-100">Sign In</button></div>
                 </div>
                 </form>

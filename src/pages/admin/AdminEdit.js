@@ -6,7 +6,11 @@ import AuthContext from '../../context/AuthContext'
 
 const AdminEdit = () => {
     
-    const { userEdit, updateUser } = useContext(AuthContext);
+    const { userEdit, updateUser, isAdmin } = useContext(AuthContext);
+
+    useEffect(() => {
+      isAdmin()
+  },[])
 
   return (
     <div>

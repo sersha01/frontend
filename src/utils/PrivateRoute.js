@@ -10,7 +10,7 @@ function PrivateRoute({ children }) {
 
 function AdminRoute({ children }) {
     const {user} = useContext(AuthContext);
-    return user && user.isAdmin ? children : <Navigate to="/admin/login" />;
+    return user ? children : <Navigate to="/admin/login" />;
   }
 
 export { 
